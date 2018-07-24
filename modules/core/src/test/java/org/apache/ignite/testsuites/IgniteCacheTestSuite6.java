@@ -62,6 +62,9 @@ public class IgniteCacheTestSuite6 extends TestSuite {
 
         suite.addTestSuite(CacheExchangeMergeTest.class);
         suite.addTestSuite(IgniteCacheClientNodeChangingTopologyTest.class);
+        suite.addTestSuite(TxRollbackOnTimeoutTest.class);
+        suite.addTestSuite(TxRollbackOnTimeoutNearCacheTest.class);
+        suite.addTestSuite(TxRollbackOnTimeoutNoDeadlockDetectionTest.class);
 
         return suite;
     }

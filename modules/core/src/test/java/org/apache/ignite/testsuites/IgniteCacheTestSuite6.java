@@ -33,14 +33,7 @@ import org.apache.ignite.internal.processors.cache.WalModeChangeAdvancedSelfTest
 import org.apache.ignite.internal.processors.cache.WalModeChangeCoordinatorNotAffinityNodeSelfTest;
 import org.apache.ignite.internal.processors.cache.WalModeChangeSelfTest;
 import org.apache.ignite.internal.processors.cache.datastructures.IgniteExchangeLatchManagerCoordinatorFailTest;
-import org.apache.ignite.internal.processors.cache.distributed.CacheExchangeMergeTest;
-import org.apache.ignite.internal.processors.cache.distributed.CachePartitionStateTest;
-import org.apache.ignite.internal.processors.cache.distributed.GridCachePartitionEvictionDuringReadThroughSelfTest;
-import org.apache.ignite.internal.processors.cache.distributed.IgniteCache150ClientsTest;
-import org.apache.ignite.internal.processors.cache.distributed.IgniteCacheThreadLocalTxTest;
-import org.apache.ignite.internal.processors.cache.distributed.IgniteOptimisticTxSuspendResumeMultiServerTest;
-import org.apache.ignite.internal.processors.cache.distributed.IgniteOptimisticTxSuspendResumeTest;
-import org.apache.ignite.internal.processors.cache.distributed.IgnitePessimisticTxSuspendResumeTest;
+import org.apache.ignite.internal.processors.cache.distributed.*;
 import org.apache.ignite.internal.processors.cache.persistence.IgnitePdsCacheAssignmentNodeRestartsTest;
 import org.apache.ignite.internal.processors.cache.transactions.TxLabelTest;
 import org.apache.ignite.internal.processors.cache.transactions.TxMultiCacheAsyncOpsTest;
@@ -67,8 +60,8 @@ public class IgniteCacheTestSuite6 extends TestSuite {
     public static TestSuite suite() throws Exception {
         TestSuite suite = new TestSuite("IgniteCache Test Suite part 6");
 
-        for (int i = 0; i < 2; i++)
-            suite.addTestSuite(CacheExchangeMergeTest.class);
+        suite.addTestSuite(CacheExchangeMergeTest.class);
+        suite.addTestSuite(IgniteCacheClientNodeChangingTopologyTest.class);
 
         return suite;
     }

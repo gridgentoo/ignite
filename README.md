@@ -6,10 +6,6 @@ https://www.youtube.com/watch?v=pCHQZwvgxNM
 
 ![Image alt](https://roem.ru/wp-content/uploads/2018/04/kitajkasperskayachubajs.jpg)
 
-Архитектура [ignite for Enterprise Architect] Исходный код и UML-диаграмма классов
-https://drive.google.com/drive/folders/1dFyHn3-PqFOXjY6ivSgpwP00WFZ_K3Dc
-
-
 "Президент Сбербанка Герман Греф назвал неконкурентоспособной IT-инфраструктуру крупнейшего банка страны. 
 Сбербанк с помощью компании GridGain полностью поменяет платформу, пообещал Греф
 GridGain развивает (http://www.gridgain.com/) одноимённую СУБД для обработки больших объёмов данных в оперативной памяти 
